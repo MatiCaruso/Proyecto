@@ -1,0 +1,1 @@
+<span id="footer">proyecto by <a href="http://www.highwise.com">Highwise</a></span>

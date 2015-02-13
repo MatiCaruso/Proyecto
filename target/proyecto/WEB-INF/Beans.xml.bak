@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--
+	
+ 	<bean id="userController" class="com.bootcamp.proyecto.controller.UserController"> 
+		<property	name="userService" ref="userService" />
+	</bean>
+  
+	<bean id="userService" class="com.bootcamp.proyecto.service.imp.UserServiceImp">
+		<constructor-arg index="0" ref="userDAOImplementation" />
+	</bean>
+  
+ 	<bean id="userDAOImplementation" class="com.bootcamp.proyecto.model.DAO.imp.UserDAOImplementation">
+ 		<property name="sessionFactory" ref="sessionFactory" />
+ 	</bean>
+  	
+  	<bean id="productController" class="com.bootcamp.proyecto.controller.ProductController"> 
+		<property	name="productService" ref="productService" />
+	</bean>
+  
+	<bean id="productService" class="com.bootcamp.proyecto.service.imp.ProductServiceImp">
+		<constructor-arg  name="productDAO" ref="productDAOImplementation" />
+	</bean>
+  
+ 	<bean id="productDAOImplementation" class="com.bootcamp.proyecto.model.DAO.imp.ProductDAOImplementation">
+ 		<property name="sessionFactory" ref="sessionFactory" />
+ 	</bean>
+
+	
+  	<bean id="compraController" class="com.bootcamp.proyecto.controller.CompraController"> 
+		<property	name="compraService" ref="compraService" />
+	</bean>
+  
+	<bean id="compraService" class="com.bootcamp.proyecto.service.imp.CompraServiceImp">
+		<constructor-arg name="compraDAO" ref="compraDAOImplementation" />
+	</bean>
+  
+ 	<bean id="compraDAOImplementation" class="com.bootcamp.proyecto.model.DAO.imp.CompraDAOImplementation">
+ 		<property name="sessionFactory" ref="sessionFactory" />
+ 	</bean>
+
+	
+	<bean id="cartController" class="com.bootcamp.proyecto.controller.CartController"> 
+		<property	name="compraService" ref="compraService" />
+	</bean>
+  
+	<bean id="cartService" class="com.bootcamp.proyecto.service.imp.CartServiceImp">
+		<constructor-arg name="cartDAO" ref="cartDAOImplementation" />
+	</bean>
+  
+ 	<bean id="cartDAOImplementation" class="com.bootcamp.proyecto.model.DAO.imp.CartDAOImplementation">
+ 		<property name="sessionFactory" ref="sessionFactory" />
+ 	</bean>
+ 	-->
+ </beans>
