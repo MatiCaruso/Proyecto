@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bootcamp.proyecto.dto.ProductDTO;
+
 import com.bootcamp.proyecto.model.dao.ProductDAO;
 import com.bootcamp.proyecto.model.entity.Product;
 import com.bootcamp.proyecto.service.ProductService;

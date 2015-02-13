@@ -2,7 +2,7 @@ package com.bootcamp.proyecto.service;
 
 import java.util.List;
 
-import com.bootcamp.proyecto.dto.ProductDTO;
+
 import com.bootcamp.proyecto.model.entity.Product;
 
 public interface ProductService {
