@@ -6,7 +6,9 @@ AGREGO USUARIOS:	/addUser	? String user, String pass .
 REMOVER USUARIOS:	/removeUser	? String user, String pass .
 
 BUSCAR USUARIO(ID):	/searchUseR	? int userId
+
 BUSCAR USUARIO(NOMBRE):	/getUser	? String user
+
 TODOS LOS USUARIOS:	/allUsers
 
 ####PRODUCTOS
