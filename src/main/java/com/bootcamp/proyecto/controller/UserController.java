@@ -46,4 +46,9 @@ public class UserController {
 		return userService.getUser(userId);
 		
 	}
+	@RequestMapping(value="/getUser", method=RequestMethod.GET)
+	public @ResponseBody User searchUser(String user){
+		return userService.getUser(user);
+		
+	}
 }

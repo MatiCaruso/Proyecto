@@ -38,8 +38,8 @@ public class Compra {
 		return id;
 	}
 	
-	public Cart getCart() {
-		return cart;
+	public int getCart() {
+		return cart.getId();
 	}
 
 	public Product getProduct() {

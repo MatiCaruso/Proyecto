@@ -60,14 +60,13 @@ public class UserDAOImplementation implements UserDAO {
 	}
 
 	@Override
-	public void removeUser(String user, String pass) {
-		List<User> deleteUsers = (List<User>) sessionFactory
-				.getCurrentSession()
-				.createQuery("FROM User u WHERE u.user=:name AND u.pass= :pass")
-				.setParameter("name", user).setParameter("pass", pass).list();
-		for (User deleteUser : deleteUsers) {
-			sessionFactory.getCurrentSession().delete(deleteUser);
-		}
+	public void removeUser(String name, String pass) {
+		User user = (User) sessionFactory.getCurrentSession()
+				.createQuery("FROM User u WHERE u.user=:name AND u.pass=:pass")
+				.setParameter("name", name).setParameter("pass", pass).uniqueResult();
+	
+			sessionFactory.getCurrentSession().delete(user);
 	}
+	
 
 }

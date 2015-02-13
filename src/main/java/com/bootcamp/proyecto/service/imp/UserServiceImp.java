@@ -60,7 +60,14 @@ public class UserServiceImp implements UserService {
 		}
 		
 	}
-
+	@Override
+	@Transactional
+	public User getUser(String name) {
+	
+			return userDAO.getUser(name);
+		
+		
+	}
 
 
 }
