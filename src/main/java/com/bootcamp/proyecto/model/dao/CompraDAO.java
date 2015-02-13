@@ -18,5 +18,6 @@ public interface CompraDAO {
 	public Compra getCompra(int compraId);
 	public List<Compra> getCompraActiva(int cartId);
 	public void updateCompra(Compra compra);
+	public List<Compra> estadoCompra(boolean estado);
 	
 }	

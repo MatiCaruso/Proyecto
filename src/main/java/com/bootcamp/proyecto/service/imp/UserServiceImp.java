@@ -23,8 +23,16 @@ public class UserServiceImp implements UserService {
 	@Override
 	@Transactional
 	public void agregarUser(User user) {
-		
-		userDAO.addUser(user);
+		List<User> usersDB = userDAO.getUser();
+		boolean i = false;
+		for (User userDB : usersDB) {
+			if (user.getId()==(userDB.getId()) ) {
+				i = true;
+			}
+		}
+		if (i == false) {
+			userDAO.addUser(user);
+		}
 	}
 
 	@Override

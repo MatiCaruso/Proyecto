@@ -74,15 +74,15 @@ public class CompraServiceImp implements CompraService {
 
 	@Override
 	public double comfirmaCompra(int cartId, int type) {
-		String payType="";
-		if(type==1){
-			payType="paypal";
+		String payType = "";
+		if (type == 1) {
+			payType = "paypal";
 		}
-		if(type==2){
-			payType="cash";
+		if (type == 2) {
+			payType = "cash";
 		}
-		if(type==3){
-			payType="credit card";
+		if (type == 3) {
+			payType = "credit card";
 		}
 		double price = 0;
 		double minor = 9999;
@@ -94,7 +94,7 @@ public class CompraServiceImp implements CompraService {
 				price = price + compra.getProduct().getUniPrice()
 						* compra.getQuantity();
 				if (compras.size() == 1 && compra.getQuantity() == 1) {
-						minor=0;
+					minor = 0;
 				} else {
 					if ("paypal".equals(payType)) {
 						if (compra.getProduct().getUniPrice() < minor) { // guarda
@@ -115,7 +115,7 @@ public class CompraServiceImp implements CompraService {
 						}
 
 					}
-					
+
 				}
 
 				higher = higher * 0.9;
@@ -131,6 +131,10 @@ public class CompraServiceImp implements CompraService {
 		}
 		return finalPrice;
 
+	}
+
+	public List<Compra> estadoCompra(boolean estado) {
+		return compraDAO.estadoCompra(estado);
 	}
 
 }

@@ -84,6 +84,13 @@ public class CompraDAOImplementation implements CompraDAO {
 		sessionFactory.getCurrentSession().update(compra);
 		
 	}
+
+	@Override
+	public List<Compra> estadoCompra(boolean estado) {
+
+		List<Compra> compras = (List<Compra>) sessionFactory.getCurrentSession().createQuery("FROM Compra c WHERE c.confirm=:estado").setParameter("estado", estado).list(); 
+		return compras;
+	}
 	
 		
 	} 
